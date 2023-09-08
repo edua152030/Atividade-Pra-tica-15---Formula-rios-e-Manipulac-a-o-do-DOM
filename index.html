@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dom</title>
+</head>
+<body>
+    <h1>formulário</h1>
+    <form>
+        <fieldset id="field1">
+            <legend>Dados Pessoais</legend>
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" required><br>
+            <label for="Endereco">Endereco</label>
+            <input type="text" id="Endereco" required><br>
+            <label for="cidade">Cidade</label>
+            <input type="text" id="cidade" required><br>
+            <label for="estado">Estado</label>
+            <select id="estado" required>
+                <option value="" selected></option>
+                <option value="minasGerais">Minas Gerais</option>
+                <option value="saoPaulo">São Paulo</option>
+                <option value="bahia">Bahia</option>
+                <option value="goias">Goias</option>
+                <option value="tocantins">Tocantins</option>
+                <option value="brasilia">Brasilia</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Dados profissionais</legend>
+            <p>Natureza do cargo</p>
+            <section class="radioBtn">
+                <input type="radio" id="radio" name="radio" value="Gerencia" checked>
+                <label for="Gerencia">Gerencia</label>
+                <input type="radio" id="radio" name="radio" value="Financeiro">
+                <label for="Financeiro">Financeiro</label>
+                <input type="radio" id="radio" name="radio" value="Recepcao">
+                <label for="Recepcao">Recepção</label>
+                <input type="radio" id="radio" name="radio" value="Administrativo">
+                <label for="Administrativo">Administrativo</label>
+                <input type="radio" id="radio" name="radio" value="Juridico">
+                <label for="Juridico">Juridíco</label>
+            </section>
+            <section class="areaInteresse">
+                <p>Área de Interesse</p>
+                <input type="checkbox" value="Computacao">
+                <label for="Computacao">Computação</label>
+                <input type="checkbox" value="Biologia">
+                <label for="Biologia">Biologia</label>
+                <input type="checkbox" value="MeioAmbiente">
+                <label for="MeioAmbiente">Meio Ambiente</label>
+                <input type="checkbox" value="Engenharia">
+                <label for="Engenharia">Engenharia</label>
+                <input type="checkbox" value="Historia">
+                <label for="Historia">Historia</label>
+            </section>
+            <section class="txtArea">
+                <p>Mini Currículo</p>
+                <input type="textarea">
+            </section>
+        </fieldset>
+            <input type="submit" id="enviar" value="enviar">
+            <input type="reset" id="limpar" value="limpar">
+    </form>
+
+    
+    <script src="index.js"></script>
+</body>
+</html>
